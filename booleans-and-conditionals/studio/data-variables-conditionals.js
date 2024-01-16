@@ -24,7 +24,7 @@
 }  
 // add logic below to verify all astronauts are ready
     if (astronautStatus === "Ready");{
-
+        
 }
 // add logic below to verify the total mass does not exceed the maximum limit of 850000
     if (totalMassKg < maximumMassLimit);{
@@ -52,4 +52,5 @@ console.log("Shuttle Mass:", shuttleMassKg, "Kg");
 console.log("Total Mass", totalMassKg, "kg");
 console.log("Fuel Tempature", fuelTempCelsius, "C");
 console.log("Weather Status:", weatherStatus);
+
 console.log("Have a safe trip astronauts!");
