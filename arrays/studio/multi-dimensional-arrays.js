@@ -4,8 +4,13 @@ let pets = "parrots,cats,moose,alien eggs";
 let sleepAids = "blankets,pillows,eyepatches,alarm clocks";
 
 //1) Use split to convert the strings into four cabinet arrays. Alphabetize the contents of each cabinet.
-
+let cabinet = [];
+cabinet.push(food.split(',').sort(), equipment.split(',').sort(), pets.split(',').sort(),  sleepAids.split(',').sort());
+console.log(cabinet)
 //2) Initialize a cargoHold array and add the cabinet arrays to it. Print cargoHold to verify its structure.
+let cargoHold = [];
+cargoHold.push(cabinet);
+console.log(cargoHold);
 
 //3) Query the user to select a cabinet (0 - 3) in the cargoHold.
 
