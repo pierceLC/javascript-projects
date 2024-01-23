@@ -5,21 +5,21 @@ let startingFuelLevel = 0; numberOfAstronauts = 0; altitude = 0;
 
 /*Exercise #4: Construct while loops to do the following:
   a. Query the user for the starting fuel level. Validate that the user enters a positive, integer value greater than 5000 but less than 30000. */
-  while (fuelLevel <= 5000 || fuelLevel > 30000 || isNaN(fuelLevel)) {
-     fuelLevel = input.question("Enter the starting fuel level: ");
+  while (startingFuelLevel <= 5000 || startingFuelLevel > 30000 || isNaN(startingFuelLevel)) {
+     startingFuelLevel = input.question("Enter the starting fuel level: ");
   }
 //b. Use a second loop to query the user for the number of astronauts (up to a maximum of 7). Validate the entry.
-while (numberAstronauts < 1 || numberAstronauts > 7 || isNaN(numberAstronauts)) {
-  numberstronauts = input.question ("Enter the number of astronauts (1-7): ");
+while (numberOfAstronauts < 1 || numberOfAstronauts > 7 || isNaN(numberOfAstronauts)) {
+  numberOfAstronauts = input.question ("Enter the number of astronauts (1-7): ");
 }
 
   
   
   
 //c. Use a final loop to monitor the fuel status and the altitude of the shuttle. Each iteration, decrease the fuel level by 100 units for each astronaut aboard. Also, increase the altitude by 50 kilometers.
-while (fuelLevel-100*numAstronauts >= 0) {
+while (startingFuelLevel - 100 * numberOfAstronauts >= 0) {
   altitude += 50;
-  fuelLevel -= 100*numAstronauts;
+  startingFuelLevel -= 100 * numberOfAstronauts;
   }
 
 
